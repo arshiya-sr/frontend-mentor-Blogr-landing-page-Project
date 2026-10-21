@@ -1,0 +1,161 @@
+/* custom variables */
+
+:root {
+
+    /* Colors */
+
+    /* Primary */
+
+    --Red-500: hsl(356, 100%, 66%);
+    --Red-400: hsl(355, 100%, 74%);
+    --Blue-900: hsl(208, 49%, 24%);
+
+    /* Neutral */
+
+    --Gray-600: hsl(207, 13%, 34%);
+    --Gray-900: hsl(240, 10%, 16%);
+
+    /* Gradient */
+
+    /* Background gradient - intro/CTA mobile nav: */
+
+    --Orange-300: hsl(13, 100%, 72%);
+    --Red-550: hsl(353, 100%, 62%);
+
+    /* Background gradient - body: */
+
+    --Purple-950: hsl(237, 17%, 21%);
+    --Purple-900: hsl(237, 23%, 31%);
+
+    /* Basic colors */
+
+    --Black: hsl(0, 0%, 0%);
+    --White-light: hsla(0, 0%, 90%, 0.7);
+
+    --Shadow: hsla(0, 0%, 0%, 0.6);
+
+    /* Typography */
+
+    --font-family: 'Ubuntu', sans-serif;
+    --font-family-heads: 'Overpass', sans-serif;
+    --font-size-base: 1rem;
+
+    /* sensible base for body text */
+
+    /* semantic font-size scale */
+
+    --fs-xxs: 0.7rem;
+    --fs-xs: 0.85rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.3rem;
+    --fs-lg: 1.5rem;
+    --fs-lg1: 1.7rem;
+    --fs-lg2: 2rem;
+    --fs-xl: 2.7rem;
+    --fs-xxl: 3rem;
+    --fs-3xl: 3.5rem;
+    --fs-gigantic: 5rem;
+    --fs-huge: 7rem;
+
+    /* Font weight */
+
+    --fw-lightest: 300;
+    --fw-light: 400;
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-dark: 900;
+
+    /* Spacing scale (rem-based for consistency)
+       Use a 8px baseline: 0.5rem (~8px), 1rem (~16px), 2rem (~32px) */
+
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+    --space-3xl: 5rem;
+    --space-huge: 8rem;
+
+    /* Border radius */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-half: 30px;
+    --radius-huge: 60px;
+    --radius-max: 120px;
+    --radius-circle: 50%;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/Overpass-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/Overpass-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+/* Overall styles */
+
+body {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: all 0.01ms linear !important;
+    }
+}
