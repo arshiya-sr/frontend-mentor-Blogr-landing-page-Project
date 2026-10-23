@@ -14,64 +14,89 @@
 <body>
 
   <header class="header">
-    <section class="head-top">
-      <section class="logo">
+    <div class="head-top">
+      <div class="logo">
         <h1 class="sr-only">Blogr</h1>
         <img src="./images/logo.svg" alt="" aria-hidden="true">
-      </section>
-      <section class="nav-bar">
+      </div>
+      <nav class="nav-bar">
         <div class="nav-list">
 
           <label class="menu-label">Product
             <input type="checkbox" class="menu-button">
-            <img src="" alt="" class="arrow">
+            <img src="./images/icon-arrow-dark.svg" alt="" class="arrow">
           </label>
 
           <div class="menu-opened product">
             <ul class="link-list">
-              <li class="link">Overview</li>
-              <li class="link">Pricing</li>
-              <li class="link">Marketplace</li>
-              <li class="link">Features</li>
-              <li class="link">Integrations</li>
+              <li>
+                <a href="#" class="link">Overview</a>
+              </li>
+              <li>
+                <a href="#" class="link">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="link">Marketplace</a>
+              </li>
+              <li>
+                <a href="#" class="link">Features</a>
+              </li>
+              <li>
+                <a href="#" class="link">Integrations</a>
+              </li>
             </ul>
           </div>
 
           <label class="menu-label">Company
             <input type="checkbox" class="menu-button">
-            <img src="" alt="" class="arrow">
+            <img src="./images/icon-arrow-dark.svg" alt="" class="arrow">
           </label>
 
-          <div class="menu-opened">
+          <div class="menu-opened company">
             <ul class="link-list">
-              <li class="link">About</li>
-              <li class="link">Team</li>
-              <li class="link">Blog</li>
-              <li class="link">Careers</li>
+              <li>
+                <a href="#" class="link">About</a>
+              </li>
+              <li>
+                <a href="#" class="link">Team</a>
+              </li>
+              <li>
+                <a href="#" class="link">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="link">Careers</a>
+              </li>
             </ul>
           </div>
 
           <label class="menu-label">Connect
             <input type="checkbox" class="menu-button">
-            <img src="" alt="" class="arrow">
+            <img src="./images/icon-arrow-dark.svg" alt="" class="arrow">
           </label>
 
-          <div class="menu-opened">
+          <div class="menu-opened connect">
             <ul class="link-list">
-              <li class="link">Contact</li>
-              <li class="link">Newsletter</li>
-              <li class="link">LinkedIn</li>
+              <li>
+                <a href="#" class="link">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="link">Newsletter</a>
+              </li>
+              <li>
+                <a href="#" class="link">LinkedIn</a>
+              </li>
             </ul>
           </div>
-
-          <div class="sign-in-btns">
-            <button class="login">Login</button>
-            <button class="sign-up">Sign Up</button>
-          </div>
-
         </div>
-      </section>
-    </section>
+
+        <div class="sign-in-btns">
+          <button class="login" type="button">Login</button>
+          <button class="sign-up" type="button">Sign Up</button>
+        </div>
+
+
+      </nav>
+    </div>
 
     <section class="hero">
       <h2 class="hero-title">A modern publishing platform</h2>
@@ -86,12 +111,12 @@
   <main class="main">
     <section class="main-top">
 
-      <h2>Designed for the future</h2>
+      <h2 class="top-title">Designed for the future</h2>
 
       <div class="left-text">
         <div class="text-container">
           <h3 class="text-title">Introducing an extensible editor</h3>
-          <p>
+          <p class="text">
             Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
             The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
             videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
@@ -101,7 +126,7 @@
 
         <div class="text-container">
           <h3 class="text-title">Robust content management</h3>
-          <p>
+          <p class="text">
             Flexible content management enables users to easily move through posts. Increase the usability of your blog
             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
           </p>
@@ -117,61 +142,100 @@
 
     <section class="main-middle">
 
+      <img src="./images/illustration-phones.svg" alt="" aria-hidden="true" class="phones">
+
+      <div class="info-container">
+        <h2 class="info-title">State of the Art Infrastructure</h2>
+        <p class="info">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+
+      <img src="./images/bg-pattern-circles.svg" alt="" aria-hidden="true">
+
     </section>
 
     <section class="main-bottom">
 
+      <h2 class="sr-only">A tool, with many benefits</h2>
+
+      <img src="./images/illustration-laptop-desktop.svg" alt="" aria-hidden="true" class="laptop desktop">
+      <img src="./images/illustration-laptop-mobile.svg" alt="" aria-hidden="true" class="laptop mobile">
+
+      <div class="text-container">
+        <h3 class="text-title">Free, open, simple</h3>
+        <p class="text">
+          Blogr is a free and open source application backed by a large community of helpful developers. It supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        </p>
+      </div>
+
+      <div class="text-container">
+        <h3 class="text-title">Powerful tooling</h3>
+        <p class="text">
+          Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+          breeze,
+          but
+          capable of producing even the most complicated sites.
+        </p>
+      </div>
+
     </section>
 
-
-
-
-
-
-
-
-    State of the Art Infrastructure
-    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-    Free, open, simple
-    Blogr is a free and open source application backed by a large community of helpful developers. It supports
-    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-    Powerful tooling
-    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-    but
-    capable of producing even the most complicated sites.
   </main>
 
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="column">
+        <img src="./images/logo.svg" alt="" aria-hidden="true" class="logo">
+        <h2 class="sr-only">Blogr</h2>
+      </div>
 
-  Product
+      <nav class="footer-nav" aria-label="footer navigation">
+        <ul class="nav-columns">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+          <li class="column">
+            <h3 class="column-title">Product</h3>
 
-  Company
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Overview</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Pricing</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Marketplace</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Features</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Integrations</a>
+          </li>
 
-  About
-  Team
-  Blog
-  Careers
+          <li class="column">
+            <h3 class="column-title">Company</h3>
 
-  Connect
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">About</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Team</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Blog</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Careers</a>
+          </li>
 
-  Contact
-  Newsletter
-  LinkedIn
+          <li class="column">
+            <h3 class="column-title">Connect</h3>
 
-  <footer class="attribution">
-    <p>Challenge by <a class="credit" rel="noopener noreferrer" target="_blank"
-        href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
-    <p>Coded by <a class="credit" rel="noopener noreferrer" target="_blank"
-        href="https://github.com/arshiya-sr">Arshiya_sr</a>.</p>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Contact</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">Newsletter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="link">LinkedIn</a>
+          </li>
+        </ul>
+
+
+      </nav>
+    </div>
+
+
+    <div class="footer-bottom">
+      <p>Challenge by <a class="credit" rel="noopener noreferrer" target="_blank"
+          href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+      <p>Coded by <a class="credit" rel="noopener noreferrer" target="_blank"
+          href="https://github.com/arshiya-sr">Arshiya_sr</a>.</p>
+    </div>
+
   </footer>
 </body>
 

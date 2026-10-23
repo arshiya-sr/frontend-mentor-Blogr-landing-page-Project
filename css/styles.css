@@ -8,11 +8,11 @@
 
 /* Footer */
 
-.attribution {
+.footer {
     font-size: var(--fs-xs);
     text-align: center;
 }
 
-.attribution a {
+.credit {
     color: hsl(228, 45%, 44%);
 }
