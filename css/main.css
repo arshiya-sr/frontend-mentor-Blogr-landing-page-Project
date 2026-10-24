@@ -30,6 +30,7 @@
     /* Basic colors */
 
     --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 100%, 100%);
     --White-light: hsla(0, 0%, 90%, 0.7);
 
     --Shadow: hsla(0, 0%, 0%, 0.6);
@@ -152,10 +153,4 @@ body {
     clip-path: inset(50%);
     white-space: nowrap;
     border: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: all 0.01ms linear !important;
-    }
 }
