@@ -1,12 +1,18 @@
 /* Header  */
 
+.desktop {
+    display: none;
+}
+
 .header {
     display: flex;
     flex-direction: column;
     background: linear-gradient(120deg, var(--Orange-300), var(--Red-550));
     padding: var(--space-xl) var(--space-lg);
     border-end-start-radius: var(--radius-max);
-    color: var(--White)
+    color: var(--White);
+    position: relative;
+    overflow: hidden;
 }
 
 .logo {
@@ -46,12 +52,14 @@
     text-align: center;
     margin-block-start: 10vh;
     margin-block-end: 8vh;
+    z-index: 3;
 }
 
 .hero-title {
     font-size: var(--fs-xl);
     font-family: var(--font-family-heads);
     max-width: 400px;
+    z-index: 3;
 }
 
 .hero-text {
@@ -59,12 +67,15 @@
     font-weight: var(--fw-light);
     max-width: 350px;
     margin-block-end: 4vh;
+    z-index: 3;
 }
 
 .cta-buttons {
     display: flex;
     justify-content: space-between;
     gap: var(--space-sm);
+    width: 380px;
+    z-index: 3;
 }
 
 .cta-button {
@@ -72,11 +83,21 @@
     font-size: var(--fs-md);
     border: 1px solid var(--White);
     border-radius: var(--radius-half);
+    min-width: 180px;
+    max-width: 180px;
 }
 
 .cta-button:first-child {
     background-color: var(--White);
-    color: var(--Black)
+    color: var(--Red-500);
+}
+
+.head-background {
+    position: absolute;
+    bottom: -20%;
+    right: -30%;
+    z-index: 2;
+    scale: 2.5;
 }
 
 /* Main */
