@@ -35,6 +35,8 @@
 
     --Shadow: hsla(0, 0%, 0%, 0.6);
 
+    --Gray-border: hsl(0, 74%, 79%);
+
     /* Typography */
 
     --font-family: 'Ubuntu', sans-serif;
@@ -154,4 +156,14 @@ body {
     clip-path: inset(50%);
     white-space: nowrap;
     border: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-heads);
+}
+
+li {
+    list-style: none;
 }

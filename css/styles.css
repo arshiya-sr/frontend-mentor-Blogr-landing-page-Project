@@ -4,12 +4,6 @@
     display: none;
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--font-family-heads);
-}
-
 .header {
     display: flex;
     flex-direction: column;
@@ -46,10 +40,28 @@ h3 {
     inset: 0;
     opacity: 0;
     z-index: 20;
+    cursor: pointer;
+    ;
 }
 
 .nav-bar {
-    display: none;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    background-color: var(--White);
+    padding: var(--space-lg);
+    flex-direction: column;
+    z-index: 30;
+    width: clamp(400px, 400px + 10vw, 700px);
+    align-items: stretch;
+    border-radius: var(--radius-md);
+    box-shadow: 0 5px 15px var(--Shadow);
+    transition: all 0.2s ease-in;
+    translate: -50% 0;
+    transform: translateY(50px);
+    left: 50%;
+    top: 120px;
 }
 
 .hero {
@@ -106,6 +118,79 @@ h3 {
     right: -30%;
     z-index: 2;
     scale: 2.5;
+}
+
+/* Hamburger menu */
+
+.header:has(.button-menu:checked) .nav-bar {
+    z-index: 30;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.menu-label {
+    color: var(--Purple-950);
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: var(--space-sm);
+    font-size: var(--fs-md);
+    align-self: center;
+    width: fit-content;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
+    margin-block-end: var(--space-lg);
+}
+
+.menu-button {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.menu-opened {
+    display: none;
+    background-color: var(--White-light);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    gap: var(--space-lg);
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: var(--space-md);
+}
+
+.nav-bar:has(.product-btn:checked) .product {
+    display: flex;
+}
+
+.nav-bar:has(.company-btn:checked) .company {
+    display: flex;
+}
+
+.nav-bar:has(.connect-btn:checked) .connect {
+    display: flex;
+}
+
+.arrow {
+    transition: all 0.2s ease-in;
+}
+
+.menu-label:has(.menu-button:checked) {
+    margin-block-end: var(--space-md);
+}
+
+.menu-label:has(.menu-button:checked) .arrow {
+    transform: rotate(-180deg);
+}
+
+.sign-in-btns {
+    color: var(--Black);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    border-block-start: 1px solid var(--Gray-border);
+    padding-block-start: var(--space-md);
 }
 
 /* Main */
