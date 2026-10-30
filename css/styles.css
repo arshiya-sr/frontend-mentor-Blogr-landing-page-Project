@@ -232,6 +232,7 @@
     display: flex;
     flex-direction: column;
     padding: var(--space-3xl) 0;
+    flex: 1;
 }
 
 /* Main top */
@@ -266,7 +267,8 @@
 .text {
     font-size: var(--fs-regul);
     color: var(--Gray-600);
-    margin-bottom: var(--space-lg)
+    margin-bottom: var(--space-lg);
+    max-width: 346px;
 }
 
 .main-top .text {
@@ -283,7 +285,7 @@
     isolation: isolate;
     padding: 10rem var(--space-lg) 7rem;
     text-align: center;
-    margin-block-start: 20rem;
+    margin-block-start: 25rem;
     color: var(--White);
     border-radius: 0 var(--radius-half) 0 var(--radius-half);
 }
@@ -292,7 +294,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -70%;
+    bottom: 65%;
     z-index: 1;
 }
 
@@ -301,6 +303,7 @@
     flex-direction: column;
     gap: var(--space-md);
     align-items: center;
+    z-index: 2;
 }
 
 .info-title {
@@ -308,7 +311,8 @@
 }
 
 .info {
-    max-width: 68%;
+    width: 68%;
+    max-width: 308px;
     font-weight: var(--fw-light);
     opacity: 0.8;
 }
@@ -344,8 +348,52 @@
 .footer {
     font-size: var(--fs-xs);
     text-align: center;
+    background-color: var(--Gray-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: var(--radius-max);
+    padding: var(--space-3xl) 0 0;
+    color: var(--White)
+}
+
+.footer-top {
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--space-xxl);
+}
+
+.nav-columns {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg)
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-title {
+    margin-block-end: var(--space-md);
+}
+
+.footer-nav .link {
+    color: var(--White);
+    text-decoration: none;
+    margin-block-end: var(--space-xxs);
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: var(--space-xl);
+    justify-self: flex-end;
+    gap: var(--space-xs);
+    padding-block-end: var(--space-sm);
 }
 
 .credit {
-    color: hsl(228, 45%, 44%);
+    color: var(--Orange-300);
 }
