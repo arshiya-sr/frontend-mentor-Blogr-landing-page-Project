@@ -59,6 +59,12 @@
     cursor: pointer;
 }
 
+.button-menu-container:focus,
+.button-menu-container:hover,
+.button-menu-container:focus-within {
+    outline: 1px solid var(--Black)
+}
+
 .nav-bar {
     opacity: 0;
     z-index: -1;
@@ -122,6 +128,12 @@
     font-weight: var(--fw-bold);
     cursor: pointer;
     z-index: 40;
+    transition: all 0.2s ease-in;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    transform: scale(1.05)
 }
 
 .cta-button:first-child {
@@ -149,12 +161,20 @@
     margin-inline-start: 50%;
     transform: translateX(-50%);
     margin-block-end: var(--space-lg);
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in;
+}
+
+.menu-label:hover,
+.menu-label:focus-within {
+    opacity: 1;
 }
 
 .menu-button {
     position: absolute;
     inset: 0;
     opacity: 0;
+    cursor: pointer;
 }
 
 .menu-opened {
@@ -215,6 +235,15 @@
     border-block-start: 1px solid var(--Gray-border);
     padding-block-start: var(--space-md);
     font-size: var(--fs-md);
+}
+
+.sign-in-btn {
+    transition: all 0.2s ease-in;
+}
+
+.sign-in-btn:focus,
+.sign-in-btn:hover {
+    transform: scale(1.05);
 }
 
 .sign-up {
