@@ -426,3 +426,7 @@
 .credit {
     color: var(--Orange-300);
 }
+
+/* Desktop layout */
+/* 64rem = 1024px Based on 16px default root HTML font size */
+@media screen and (min-width: 64rem) {}
