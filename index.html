@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | [Blogr]</title>
+  <title>Frontend Mentor | Blogr</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -23,89 +23,103 @@
     <div class="head-top">
       <div class="logo">
         <h1 class="sr-only">Blogr</h1>
-        <img src="./images/logo.svg" alt="" aria-hidden="true">
+        <img class="logo-img" src="./images/logo.svg" alt="" aria-hidden="true">
 
         <label class="button-menu-container">
           <p class="sr-only">press this button to open the hamburger menu</p>
           <input type="checkbox" class="button-menu">
         </label>
+
+        <nav class="nav-bar">
+
+          <div class="nav-list">
+
+            <div class="nav-block">
+              <label class="menu-label">Product
+                <input type="checkbox" class="menu-button product-btn">
+                <img src="./images/icon-arrow-dark.svg" alt="" class="arrow dark">
+                <img src="./images/icon-arrow-light.svg" alt="" class="arrow light">
+              </label>
+
+              <div class="menu-opened product">
+                <ul class="link-list">
+                  <li>
+                    <a href="#" class="link">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Marketplace</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Features</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Integrations</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="nav-block">
+              <label class="menu-label">Company
+                <input type="checkbox" class="menu-button company-btn">
+                <img src="./images/icon-arrow-dark.svg" alt="" class="arrow dark">
+                <img src="./images/icon-arrow-light.svg" alt="" class="arrow light">
+              </label>
+
+              <div class="menu-opened company">
+                <ul class="link-list">
+                  <li>
+                    <a href="#" class="link">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Team</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="nav-block">
+              <label class="menu-label">Connect
+                <input type="checkbox" class="menu-button connect-btn">
+                <img src="./images/icon-arrow-dark.svg" alt="" class="arrow dark">
+                <img src="./images/icon-arrow-light.svg" alt="" class="arrow light">
+              </label>
+
+              <div class="menu-opened connect">
+                <ul class="link-list">
+                  <li>
+                    <a href="#" class="link">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Newsletter</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="sign-in-btns">
+            <button class="sign-in-btn login" type="button">Login</button>
+            <button class="sign-in-btn sign-up" type="button">Sign Up</button>
+          </div>
+
+        </nav>
       </div>
-      <nav class="nav-bar">
-        <div class="nav-list">
 
-          <label class="menu-label">Product
-            <input type="checkbox" class="menu-button product-btn">
-            <img src="./images/icon-arrow-dark.svg" alt="" class="arrow">
-          </label>
-
-          <div class="menu-opened product">
-            <ul class="link-list">
-              <li>
-                <a href="#" class="link">Overview</a>
-              </li>
-              <li>
-                <a href="#" class="link">Pricing</a>
-              </li>
-              <li>
-                <a href="#" class="link">Marketplace</a>
-              </li>
-              <li>
-                <a href="#" class="link">Features</a>
-              </li>
-              <li>
-                <a href="#" class="link">Integrations</a>
-              </li>
-            </ul>
-          </div>
-
-          <label class="menu-label">Company
-            <input type="checkbox" class="menu-button company-btn">
-            <img src="./images/icon-arrow-dark.svg" alt="" class="arrow">
-          </label>
-
-          <div class="menu-opened company">
-            <ul class="link-list">
-              <li>
-                <a href="#" class="link">About</a>
-              </li>
-              <li>
-                <a href="#" class="link">Team</a>
-              </li>
-              <li>
-                <a href="#" class="link">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="link">Careers</a>
-              </li>
-            </ul>
-          </div>
-
-          <label class="menu-label">Connect
-            <input type="checkbox" class="menu-button connect-btn">
-            <img src="./images/icon-arrow-dark.svg" alt="" class="arrow">
-          </label>
-
-          <div class="menu-opened connect">
-            <ul class="link-list">
-              <li>
-                <a href="#" class="link">Contact</a>
-              </li>
-              <li>
-                <a href="#" class="link">Newsletter</a>
-              </li>
-              <li>
-                <a href="#" class="link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="sign-in-btns">
-          <button class="sign-in-btn login" type="button">Login</button>
-          <button class="sign-in-btn sign-up" type="button">Sign Up</button>
-        </div>
-
-      </nav>
     </div>
 
     <section class="hero">
@@ -204,7 +218,7 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="column">
-        <img src="./images/logo.svg" alt="" aria-hidden="true" class="logo">
+        <img src="./images/logo.svg" alt="" aria-hidden="true" class="logo-img">
         <h2 class="sr-only">Blogr</h2>
       </div>
 

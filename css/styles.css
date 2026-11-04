@@ -1,6 +1,7 @@
 /* Header  */
 
-.desktop {
+.desktop,
+.light {
     display: none;
 }
 
@@ -154,7 +155,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    gap: var(--space-sm);
+    gap: var(--space-xs);
     font-size: var(--fs-md);
     align-self: center;
     width: fit-content;
@@ -429,4 +430,103 @@
 
 /* Desktop layout */
 /* 64rem = 1024px Based on 16px default root HTML font size */
-@media screen and (min-width: 64rem) {}
+@media screen and (min-width: 64rem) {
+
+    .mobile,
+    .dark {
+        display: none;
+    }
+
+    .desktop,
+    .light {
+        display: block;
+    }
+
+    .header {
+        padding: var(--space-xl) 15rem;
+    }
+
+    .head-background {
+        scale: 2;
+        bottom: -70%;
+    }
+
+    .logo-img {
+        min-width: 140px;
+    }
+
+    .button-menu-container {
+        display: none;
+    }
+
+    .nav-bar {
+        opacity: 1;
+        z-index: 1;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 100%;
+        align-items: center;
+        border-radius: 0;
+        box-shadow: none;
+        transition: none;
+        translate: 0;
+        transform: translateY(0);
+        left: auto;
+        top: auto;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-md);
+        padding: 0;
+    }
+
+    .menu-label {
+        color: var(--White);
+        margin-inline-start: 0;
+        transform: translateX(0);
+        margin-block-end: 0;
+    }
+
+    .nav-block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+    }
+
+    .menu-opened {
+        position: absolute;
+        background-color: var(--White);
+        min-width: 70%;
+        max-width: 150px;
+        text-align: left;
+        gap: var(--space-sm);
+        border-radius: var(--radius-md);
+        top: 100%;
+        padding: var(--space-md);
+    }
+
+    .menu-label:has(.menu-button:checked) {
+        margin-block-end: 0;
+    }
+
+    .sign-in-btns {
+        flex-direction: row;
+        border-top: 0;
+        padding: 0;
+        margin-block-start: auto;
+        color: var(--White)
+    }
+
+    .sign-up {
+        background: none;
+        background-color: var(--White);
+        color: var(--Red-550)
+    }
+}
