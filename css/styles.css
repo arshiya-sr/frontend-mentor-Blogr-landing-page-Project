@@ -303,10 +303,6 @@
     max-width: 346px;
 }
 
-.main-top .text {
-    max-width: 65vw;
-}
-
 /* Main middle */
 
 .main-middle {
@@ -415,6 +411,13 @@
     text-decoration: none;
     margin-block-end: var(--space-xxs);
     opacity: 0.8;
+    transition: all 0.2s ease-in;
+}
+
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .footer-bottom {
@@ -431,8 +434,8 @@
 }
 
 /* Desktop layout */
-/* 64rem = 1024px Based on 16px default root HTML font size */
-@media screen and (min-width: 64rem) {
+/* 70rem = 1024px Based on 16px default root HTML font size */
+@media screen and (min-width: 70rem) {
 
     /* Overall */
 
@@ -459,6 +462,7 @@
 
     .logo-img {
         min-width: 140px;
+        max-width: 140px;
     }
 
     .button-menu-container {
@@ -542,6 +546,7 @@
 
     /* Main */
     /* Main top */
+
     .main-top {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -574,10 +579,16 @@
         grid-area: text;
         padding-inline-start: 12rem;
         text-align: left;
+        justify-content: space-between;
     }
 
     .text-container {
         align-items: flex-start;
+        text-align: left;
+    }
+
+    .text {
+        max-width: 32vw;
     }
 
     /* Main middle */
@@ -614,5 +625,56 @@
         left: -10%;
         transform: translateX(0);
         scale: 1.05;
+    }
+
+    /* Main bottom */
+
+    .main-bottom {
+        margin-block-start: var(--space-xl);
+        flex-direction: row;
+    }
+
+    .left-img {
+        position: relative;
+        padding: var(--space-lg) 0;
+        width: fit-content;
+    }
+
+    .laptop {
+        transform: translateX(-35%);
+    }
+
+    .right-text {
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-lg) 0;
+        gap: var(--space-lg)
+    }
+
+    /* Footer */
+    /* Footer top */
+
+    .footer-top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 200px 4fr;
+        padding-inline-start: 8rem;
+    }
+
+    .nav-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        text-align: left;
+        padding-inline-start: 6rem;
+    }
+
+    .column-title {
+        margin-block-end: var(--space-lg);
+    }
+
+    .footer .link {
+        margin-block-end: var(--space-md);
+        font-size: var(--fs-sm);
     }
 }
