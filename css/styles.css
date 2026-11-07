@@ -196,19 +196,23 @@
 .link-list {
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm)
+    gap: var(--space-sm);
+    z-index: 1;
 }
 
 .nav-bar:has(.product-btn:checked) .product {
     display: flex;
+    z-index: 99;
 }
 
 .nav-bar:has(.company-btn:checked) .company {
     display: flex;
+    z-index: 99;
 }
 
 .nav-bar:has(.connect-btn:checked) .connect {
     display: flex;
+    z-index: 99;
 }
 
 .arrow {
@@ -225,8 +229,17 @@
 
 .header .link {
     text-decoration: none;
-    color: var(--Blue-900)
+    color: var(--Blue-900);
+    font-weight: var(--fw-normal);
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
 }
+
+.header .link:hover,
+.header .link:focus {
+    opacity: 1;
+}
+
 
 .sign-in-btns {
     color: var(--Black);
@@ -435,6 +448,7 @@
 
 /* Desktop layout */
 /* 70rem = 1024px Based on 16px default root HTML font size */
+
 @media screen and (min-width: 70rem) {
 
     /* Overall */
@@ -471,7 +485,6 @@
 
     .nav-bar {
         opacity: 1;
-        z-index: 1;
         display: flex;
         position: relative;
         flex-direction: row;
