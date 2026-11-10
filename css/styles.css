@@ -68,7 +68,6 @@
 
 .nav-bar {
     opacity: 0;
-    z-index: -1;
     display: flex;
     position: absolute;
     background-color: var(--White);
@@ -188,7 +187,7 @@
     gap: var(--space-lg);
     flex-direction: column;
     width: 100%;
-    margin-bottom: var(--space-md);
+    margin-block-end: var(--space-md);
     border-radius: var(--radius-md);
     padding: var(--space-md) 0;
 }
@@ -312,7 +311,7 @@
 .text {
     font-size: var(--fs-regul);
     color: var(--Gray-600);
-    margin-bottom: var(--space-lg);
+    margin-block-end: var(--space-lg);
     max-width: 346px;
 }
 
@@ -568,7 +567,7 @@
             'title title'
             'text image'
         ;
-        margin-top: 8rem;
+        margin-block-start: 8rem;
     }
 
     .top-title {
